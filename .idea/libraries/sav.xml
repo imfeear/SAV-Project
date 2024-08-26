@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="sav">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/biblioteca/sav.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
