@@ -10,11 +10,11 @@ import javax.swing.*;
  *
  * <p>Nome: Bruno Ricardo da Silva Reis</p>
  * <p>Versão do Java: 22</p>
- * <p>Email: bruno.silva@jala.university</p>
+ * <p>Email: reeiskkz@gmail.com</p>
  *
  * @version 22
  */
-public class Sav {
+public class Algorithm {
 
     /**
      * O ponto de entrada principal para a aplicação.

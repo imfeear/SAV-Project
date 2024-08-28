@@ -63,7 +63,7 @@ public class SortingPanel extends JPanel {
         this.array = data;
         this.order = order;
         this.labelType = labelType;
-        this.pause = pause; // Define o tempo de pausa
+        this.pause = pause; //Define o tempo de pausa
 
         //Configura o algoritmo de ordenação
         switch (algorithm.toLowerCase()) {
@@ -85,20 +85,20 @@ public class SortingPanel extends JPanel {
      * Inicia o processo de ordenação e atualiza a interface gráfica periodicamente para refletir os passos da ordenação.
      */
     public void startSorting() {
-        startTime = System.currentTimeMillis(); // Marca o início da ordenação
-        elapsedTime = 0; // Reseta o tempo decorrido
-        timer = new Timer(); // Cria um novo Timer
+        startTime = System.currentTimeMillis(); //Marca o início da ordenação
+        elapsedTime = 0; //Reseta o tempo decorrido
+        timer = new Timer(); //Cria um novo Timer
         timer.scheduleAtFixedRate(new TimerTask() {
             @Override
             public void run() {
                 elapsedTime = System.currentTimeMillis() - startTime;
-                repaint(); // Repinta para atualizar o tempo
+                repaint(); //Repinta para atualizar o tempo
             }
-        }, 0, 100); // Atualiza a cada 100 ms
+        }, 0, 100); //Atualiza a cada 100 ms
 
         new Thread(() -> {
             sortAlgorithm.sort(array, order, pause);
-            timer.cancel(); // Para o Timer quando a ordenação termina
+            timer.cancel(); //Para o Timer quando a ordenação termina
             repaint();
         }).start();
     }
@@ -129,7 +129,7 @@ public class SortingPanel extends JPanel {
                 .mapToInt(e -> e instanceof Integer ? (Integer) e : (Character) e)
                 .min().orElse(0); // Obtém o valor mínimo ou 0 se o array estiver vazio
 
-        int numBars = array.length; // Usa o comprimento do array como o número de barras
+        int numBars = array.length; //Usa o comprimento do array como o número de barras
         int totalSpace = width - 2 * margin; // Espaço total disponível para as barras
 
         //Ajusta a largura das barras e o espaçamento para garantir que todas as barras sejam visíveis
@@ -138,7 +138,7 @@ public class SortingPanel extends JPanel {
 
         g.setFont(new Font("SansSerif", Font.PLAIN, 12)); // Ajusta o tamanho da fonte para caracteres
 
-        // Calcula a linha de base para as barras
+        //Calcula a linha de base para as barras
         int zeroLine = (int) (height * 0.1 + (maxValue / (double) (maxValue - minValue)) * (height * 0.8));
 
         for (int i = 0; i < numBars; i++) {
