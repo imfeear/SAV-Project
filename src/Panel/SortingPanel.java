@@ -34,9 +34,7 @@ public class SortingPanel extends JPanel {
         setBackground(Color.WHITE);
         setPreferredSize(new Dimension(1470, 700));
         colors = new Color[]{
-                Color.RED, Color.GREEN, Color.BLUE, Color.ORANGE,
-                Color.CYAN, Color.MAGENTA, Color.YELLOW, Color.PINK,
-                Color.LIGHT_GRAY, Color.DARK_GRAY
+                Color.BLACK,Color.RED,Color.YELLOW,Color.CYAN,Color.PINK,Color.MAGENTA
         };
     }
 
