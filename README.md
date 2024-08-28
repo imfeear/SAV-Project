@@ -20,11 +20,11 @@ A Java-based application that visualizes the execution of sorting algorithms usi
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/imfeear/SAV-Project.git
+    git clone https://github.com/imfeear/Sort-Algorithm.git
     ```
 2. **Navigate to the project directory**:
     ```bash
-    cd SAV-Project
+    cd Sort-Algorithm
     ```
 3. **Compile the project**:
     ```bash
@@ -32,7 +32,7 @@ A Java-based application that visualizes the execution of sorting algorithms usi
     ```
 4. **Run the application**:
     ```bash
-    java -cp bin Sav [options]
+    java -cp bin Algorithm [options]
     ```
 
 ## Usage
@@ -40,7 +40,7 @@ A Java-based application that visualizes the execution of sorting algorithms usi
 Run the application with command-line arguments to configure the sorting process:
 
 ```bash
-java -cp bin Sav [options]
+java -cp bin Algorithm [options]
 ```
 ## Command-Line Options
 
@@ -62,11 +62,11 @@ java -cp bin Sav [options]
 
 **Sort 50 random numbers in ascending order with a 500 ms pause between each step:**
 ```bash
-java -cp bin Sav a=b t=n o=AZ in=r s=500 l=50
+java -cp bin Algorithm a=b t=n o=AZ in=r s=500 l=50
 ```
 **Sort user-provided characters in descending order with a 300 ms pause:**
 ```bash
-java -cp bin Sav a=i t=c o=ZA in=m v=a,b,c,d,e,f s=300 l=10
+java -cp bin Algorithm a=i t=c o=ZA in=m v=a,b,c,d,e,f s=300 l=10
 ```
 ## Project Structure
 
@@ -76,7 +76,7 @@ java -cp bin Sav a=i t=c o=ZA in=m v=a,b,c,d,e,f s=300 l=10
 
 **'src/TratamentoArgs/': Contains command-line argument processing ('ArgumentProcessor').**
 
-**'src/Sav.java': Main class to start the application.**
+**'src/Algorithm.java': Main class to start the application.**
 
 ## Contributing
 
