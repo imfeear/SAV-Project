@@ -1,8 +1,8 @@
-# 📊Sorting Algorithm Visualizer
+# 📊Sorting Algorithm
 
 A Java-based application that visualizes the execution of sorting algorithms using a graphical user interface built with Java Swing. This tool helps in understanding and analyzing various sorting algorithms in action.
 
-![Sorting Algorithm Visualizer](img/visualizador.png)
+![Sorting Algorithm](img/visualizador.png)
 
 ## Features
 
